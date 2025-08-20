@@ -4,11 +4,10 @@ import BookItem from '@/components/BookItem.vue'
 import { useGetBookQuery } from '@/queries/bookQuery'
 import { Loader2 } from 'lucide-vue-next'
 
-const { data, isLoading } = useGetBookQuery()
+const { data, isLoading, ...query } = useGetBookQuery()
 </script>
 
 <template>
-  {{ console.log(isLoading) }}
   <main class="pt-4 max-w-[1280px] px-4 sm:px-8 md:px-12 mx-auto">
     <AppBanner
       imgUrl="https://images.unsplash.com/photo-1569728723358-d1a317aa7fba?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

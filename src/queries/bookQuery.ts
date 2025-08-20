@@ -11,7 +11,7 @@ export const useGetBookQuery = () => {
       try {
         const response = await apiService.get<BooksResp>('/books')
         return response.data.books
-      } catch {
+      } catch (err) {
         toast('Failed to fetch books', {
           autoClose: 1000,
           theme: 'dark',
@@ -19,6 +19,7 @@ export const useGetBookQuery = () => {
           position: toast.POSITION.TOP_CENTER,
           progressStyle: { backgroundColor: 'rgb(59 130 246)' },
         })
+        throw new Error('Failed to fetch books', { cause: err })
       }
     },
   })
@@ -31,7 +32,7 @@ export const useGetBookByIdQuery = (id: MaybeRef<string>) => {
       try {
         const response = await apiService.get<{ book: Book }>(`/books/${toValue(id)}`)
         return response.data.book
-      } catch {
+      } catch (err) {
         toast('Book not found', {
           autoClose: 1000,
           theme: 'dark',
@@ -39,6 +40,7 @@ export const useGetBookByIdQuery = (id: MaybeRef<string>) => {
           position: toast.POSITION.TOP_CENTER,
           progressStyle: { backgroundColor: 'rgb(59 130 246)' },
         })
+        throw new Error('Failed to fetch books', { cause: err })
       }
     },
   })
