@@ -39,7 +39,7 @@ const addToCartHandler = () => {
 </script>
 
 <template>
-  <main class="pt-4 max-w-[1280px] px-4 sm:px-8 md:px-12 mx-auto">
+  <main class="pt-4 pb-4 md:pb-12 max-w-[1280px] px-4 sm:px-8 md:px-12 mx-auto">
     <div
       class="grid gap-4 grid-cols-1 mt-4 sm:grid-cols-2 border-b pb-4 md:pb-8 border-neutral-200"
     >

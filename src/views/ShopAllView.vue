@@ -8,7 +8,7 @@ const booksQuery = useGetBookQuery()
 </script>
 
 <template>
-  <main class="pt-4 max-w-[1280px] px-4 sm:px-8 md:px-12 mx-auto">
+  <main class="pt-4 pb-4 md:pb-12 max-w-[1280px] px-4 sm:px-8 md:px-12 mx-auto">
     <AppBanner
       img-url="https://images.unsplash.com/photo-1599901723404-e38e7192b930?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGJvb2slMjBzdG9yZXxlbnwwfHwwfHx8MA%3D%3D"
       text="SHOP ALL BOOKS"

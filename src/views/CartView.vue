@@ -6,7 +6,7 @@ const cartStore = useCartStore()
 </script>
 
 <template>
-  <main class="pt-4 max-w-[1280px] px-4 sm:px-8 md:px-12 mx-auto">
+  <main class="pt-4 pb-4 md:pb-12 max-w-[1280px] px-4 sm:px-8 md:px-12 mx-auto">
     <div class="w-full">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mt-8 mb-6 text-center">
         Shopping Cart
